@@ -119,9 +119,8 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   background-color: #F2F2F2;
-  height: 45px;
+  height: 40px;
   width: 45px;
-  border: 1px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -140,12 +139,12 @@ form {
 .conteneur input#localisation {
   font-weight: bold;
   color: black;
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 0.9em;
+  font-weight: 600;
   width: 210px;
-  height: 45px;
+  height: 40px;
   background: #white;
-  border-color: rgba(232, 232, 232, .6);
+  border: 1px rgba(232, 232, 232, 0.5) solid;
   padding-left: 10px;
 }
 
@@ -153,7 +152,7 @@ form {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: black;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: 5px
 }
 
@@ -163,7 +162,7 @@ form button {
   color: white;
   background-color: #0065FC;
   width: 120px;
-  height: 45px;
+  height: 40px;
   border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
