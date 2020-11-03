@@ -97,12 +97,12 @@ header nav a {
   border-top: 3px solid transparent;
 }
 
-nav .inscription {
+header nav .inscription {
   font-weight: bold;
   color: #0065FC;
 }
 
-nav a:hover {
+header nav a:hover {
   color: #0065FC;
   border-top: 3px solid #0065FC;
 
@@ -114,7 +114,7 @@ nav a:hover {
   display: flex;
 }
 
-.square {
+.squaremapicon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,38 +168,73 @@ form button {
   border-bottom-right-radius: 15px;
 }
 
+/* h1 h2 sous le header */
+
+#titresubheader {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
 /* Filtres */
 
 #filtres {
   display: flex;
   flex-direction: row;
+  align-content: flex-start;
   align-items: center;
-  justify-content: flex-start;
+  font-weight: 600;
+  padding: 25px 0px 25px;
 }
+
 .filtres {
-  border: #F2F2F2 2px solid;
-  border-radius: 35px;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 10px;
-  padding-bottom: 200px;
-}
-
-section #filtres ul {
-  font-weight: bold;
-  list-style-type: none;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-content: flex-start;
+  border: #e6e6e6 2px solid;
+  border-radius: 35px;
 }
 
-section #filtres li a {
-  float: right;
-  font-size: 1em;
-  color: #000000;
-  padding-bottom: 3px;
-  text-decoration: none;
-  margin-left: 60px;
+#filtres a i {
+  position: relative;
+  right: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #0065FC;
+  background-color: #DEEBFF;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
 }
+
+#filtres nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%
+}
+
+#filtres nav a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+#filtres nav a:hover {
+  color: #0065FC;
+}
+/* hebergements*/
 
 #hebergementsmarseille {
   border-color: black;
