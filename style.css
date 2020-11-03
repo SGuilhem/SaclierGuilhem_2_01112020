@@ -59,12 +59,13 @@ h2 {
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 550;
   font-size: 1.1em;
 }
 
 h4 {
   font-size: 0.8em;
+  font-weight: 400;
 }
 
 
@@ -185,7 +186,7 @@ form button {
   flex-direction: row;
   align-content: flex-start;
   align-items: center;
-  font-weight: 600;
+  font-weight: 550;
   padding: 25px 0px 25px;
 }
 
@@ -234,6 +235,35 @@ form button {
 #filtres nav a:hover {
   color: #0065FC;
 }
+
+/* Informations */
+
+h4 {
+}
+
+#infos i{
+  font-size: 10px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #0065FC;
+  border: #e6e6e6 1px solid;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+#infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 335px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
 /* hebergements*/
 
 #hebergementsmarseille {
