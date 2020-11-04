@@ -232,6 +232,10 @@ form button {
   padding-left: 10px;
 }
 
+#filtres a:hover {
+  color: #0065FC;
+}
+
 /* Informations */
 
 h4 {
