@@ -47,7 +47,7 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
     min-width: 900px;
-    max-width: 1300px;
+    max-width: 1400px;
 }
 
 h1 {
@@ -79,6 +79,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 header #logo{
@@ -178,6 +180,8 @@ form button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
@@ -190,6 +194,8 @@ form button {
   align-items: center;
   font-weight: 550;
   padding: 25px 0px 25px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .filtres {
@@ -240,7 +246,15 @@ form button {
 
 /* Informations */
 
-h4 {
+#infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 430px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #infos i{
@@ -257,16 +271,12 @@ h4 {
   border-bottom-left-radius: 100%;
 }
 
-#infos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 335px;
-  justify-content: space-between;
-  padding-bottom: 30px;
-}
-
 /* hebergements à Marseille*/
+
+#hebergements {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 #hebergementsmarseille {
   display: flex;
@@ -469,20 +479,21 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-color: black;
   background-color: white;
   border-radius: 15px;
   color: black;
   font-size: 0.9em;
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 #activites #listeactivites {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
-  height: 600px;
 }
 
 #listeactivites .descriptactivites {
@@ -500,7 +511,7 @@ section {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  height: 400px;
+  height: 410px;
   width: 750px;
 }
 
@@ -508,14 +519,14 @@ section {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  height: 400px;
+  height: 410px;
   width: 750px;
 }
 
 #activites .vignetteverticale {
   background-color: white;
   width: 290px;
-  height: 400px;
+  height: 405px;
   border: 0px white solid;
   border-radius: 15px;
   color: black;
@@ -530,14 +541,14 @@ section {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 290px;
-  height: 350px;
+  height: 355px;
 }
 
 #activites .vignettemoyenne {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 290px;
+  width: 295px;
   height: 205px;
   border: 0px white solid;
   border-radius: 15px;
@@ -552,7 +563,7 @@ section {
   align-content: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: 290px;
+  width: 295px;
   height: 155px;
 }
 
@@ -561,7 +572,7 @@ section {
   flex-direction: column;
   background-color: white;
   width: 290px;
-  height: 155px;
+  height: 160px;
   border: 0px white solid;
   border-radius: 15px;
   color: black;
@@ -576,32 +587,87 @@ section {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 290px;
-  height: 105px;
+  height: 110px;
 }
 
 /* Footer */
 
 footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 30px;
   background-color: #F2F2F2;
-  border-radius: 15px;
+  width: 100%;
+  padding: 50px;
+}
+
+footer #apropos {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+footer #apropos #liste_a_propos {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-right: 1600px
+}
+
+footer #apropos #liste_a_propos nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  height: 80px;
+}
+
+footer #apropos #liste_a_propos nav a {
+  padding-top: 10px;
+}
+
+footer #noshebergements {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+footer #noshebergements #liste_nos_hebergements {
+  display: flex;
+  flex-direction: column;
+}
+
+footer #noshebergements #liste_nos_hebergements nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  height: 80px;
+}
+
+footer #noshebergements #liste_nos_hebergements nav a {
+  padding-top: 10px;
+}
+
+footer #assistance {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+footer #assistance #liste_assistance {
+  display: flex;
+  flex-direction: column;
+}
+
+footer #assistance #liste_assistance nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+footer #assistance #liste_assistance nav a {
+  padding-top: 15px;
 }
 
 footer h4 {
   font-weight: bold;
   font-size: 1em;
-}
-
-footer ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 footer a {
