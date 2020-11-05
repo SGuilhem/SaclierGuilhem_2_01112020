@@ -615,11 +615,10 @@ footer #apropos #liste_a_propos nav {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
-  height: 80px;
 }
 
 footer #apropos #liste_a_propos nav a {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 footer #noshebergements {
@@ -637,11 +636,10 @@ footer #noshebergements #liste_nos_hebergements nav {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
-  height: 80px;
 }
 
 footer #noshebergements #liste_nos_hebergements nav a {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 footer #assistance {
@@ -658,7 +656,7 @@ footer #assistance #liste_assistance {
 footer #assistance #liste_assistance nav {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 footer #assistance #liste_assistance nav a {
