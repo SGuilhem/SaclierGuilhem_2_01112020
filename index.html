@@ -3,6 +3,7 @@
   <head>
    	<meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="petite_resolution.css">
    	<title>Reservia Vacances</title>
     <script src="https://kit.fontawesome.com/3759550dba.js" crossorigin="anonymous"></script>
   </head>
@@ -13,9 +14,9 @@
             <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
         </div>
         <nav>
-              <a href="#">Hébergements</a>
-              <a href="#">Activités</a>
-              <a href="#" class="inscription">S'inscrire</a>
+              <a href="#hebergements">Hébergements</a>
+              <a href="#activites">Activités</a>
+              <a href="#"id="inscription">S'inscrire</a>
         </nav>
       </header>
         <div id="titresubheader">
@@ -30,7 +31,7 @@
                 </div>
                 <input type="localisation" id="localisation" placeholder="Marseille, France" maxlength="25">
               </div>
-            <button>Rechercher</button>
+            <button><span class="loupe"><i class="fas fa-search"></i></span><div id="rechercher">Rechercher<div></button>
           </div>
         </form>
         </div>
@@ -59,7 +60,7 @@
               <a href="#" class="hebergement"><img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"/><div class="descriptlocleft">Auberge Le Panier<div class="prix">Nuits à partir de 23€</div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><div class="greystar"><i class="fas fa-star"></i></div></div></div></a>
               <a href="#" class="hebergement"><img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/><div class="descriptlocleft">Hôtel chez Amina<div class="prix">Nuits à partir de 96€</div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div></a>
             </div>
-          <p>Afficher plus</p>
+          <p><a href="#">Afficher plus</a></p>
         </div>
         <aside id="populaires">
           <div id="titrepopulaires">
