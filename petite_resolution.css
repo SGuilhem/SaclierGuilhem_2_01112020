@@ -101,13 +101,13 @@
 
 form {
   width: 100%;
-  pa
 }
 
 form #box .conteneur input{
   width: 600px;
   height: 120px;
   padding-left: 50px;
+  font-size: 50px;
 }
 form #box .squaremapicon {
   height: 120px;
@@ -123,6 +123,7 @@ form button {
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  font-size: 45px;
 }
 
 form button #rechercher {
@@ -135,6 +136,8 @@ form button .loupe {
   justify-content: center;
 }
 
+form .fas {
+}
 /* Filtres */
 
 /* Hébergements */
