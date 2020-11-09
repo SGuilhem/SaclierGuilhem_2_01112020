@@ -81,7 +81,7 @@
 
 #titresubheader {
   margin-top: 70px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   padding-right: 50px;
   display: flex;
   align-items: flex-start;
@@ -112,6 +112,8 @@ form #box .conteneur input{
 form #box .squaremapicon {
   height: 120px;
   width: 120px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
 }
 
 form button {
@@ -119,10 +121,10 @@ form button {
   width: 120px;
   height: 120px;
   border: none;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
   font-size: 45px;
 }
 
@@ -139,6 +141,22 @@ form button .loupe {
 form .fas {
 }
 /* Filtres */
+
+#filtres {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  display: flex;
+  align-self: flex-start;
+  font-size: 50px;
+
+}
+
+#filtres nav {
+  width: 100%
+}
 
 /* Hébergements */
 
