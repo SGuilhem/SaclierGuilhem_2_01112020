@@ -520,9 +520,7 @@ section {
 #listeactivites .descriptactivites {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0px 15px 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
 
@@ -565,7 +563,6 @@ section {
   border-top-right-radius: 15px;
   width: 100%;
   height: 100%;
-  max-width: 290px;
   max-height: 355px;
 }
 
@@ -592,7 +589,6 @@ section {
   border-top-right-radius: 15px;
   width: 100%;
   height: 100%;
-  max-width: 295px;
   max-height: 155px;
 }
 
@@ -619,7 +615,6 @@ section {
   border-top-right-radius: 15px;
   width: 100%;
   height: 100%;
-  max-width: 290px;
   max-height: 110px;
 }
 
