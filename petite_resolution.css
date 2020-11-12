@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 375px) and (max-device-width: 1200px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 1366px) {
   body {
         display: flex;
         flex-direction: column;
@@ -223,7 +223,6 @@ h4 {
 #populaires .populaires {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     background-color: white;
     width: 90%;
     height: 340px;
@@ -235,10 +234,15 @@ h4 {
     padding: 10px 0px;
 }
 
+#populaires {
+  padding: 0px 0px 90px;
+}
+
 #populaires img {
   max-width: 300px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 55px;
+  padding: 5px 5px 0px 10px;
 }
 
 #populaires .descriptlocright {
@@ -252,6 +256,79 @@ h4 {
 
 #populaires .rating {
   font-size: 0.7em;
+}
+
+#hebergementsmarseille {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px;
+  background-color: white;
+  color: black;
+  font-size: 0.9em;
+  width: 100%;
+  height: 3300px;
+}
+
+#hebergementsmarseille h1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4em;
+  padding: 45px 0px 55px;
+  width: 100%;
+}
+
+#hebergementsmarseille #listelogements {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+#hebergementsmarseille .hebergement {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 470px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+
+#hebergementsmarseille img {
+  max-height: 275px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  object-position: 50% 50%;
+  object-fit: cover;
+  padding: 5px 5px 0px 5px;
+}
+
+#hebergementsmarseille p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 3em;
+  font-weight: 800;
+  color: black;
+}
+
+#hebergementsmarseille .descriptlocleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2.5em;
+  padding: 0px 0px 0px 30px;
+}
+
+#hebergementsmarseille .descriptlocleft span {
+  font-size: 1.1em;
+  margin: 0px;
+  padding: 10px 0px 10px;
+}
+
+#hebergementsmarseille .descriptlocleft .rating {
+    font-size: 0.8em;
+    padding-top: 10px;
 }
 
 /* Activités */
