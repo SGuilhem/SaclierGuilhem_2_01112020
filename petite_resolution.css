@@ -3,7 +3,10 @@
         display: flex;
         flex-direction: column;
         font-family: 'Raleway', sans-serif;
+        width: fit-content;
   }
+
+/* @media screen and (min-device-width: 375px) and (max-device-width: 1366px) */
 
 /* bloc page */
 
@@ -413,26 +416,29 @@ h4 {
 
 footer {
   display: flex;
-  width: fit-content;
   background-color: #F2F2F2;
-  padding: 50px 30px 50px;
+  padding: 50px 0 50px;
   margin-top: 30px;
+  width: 100%;
 }
 
 footer #container_footer {
   display: flex;
   flex-direction: column;
-  padding: 0px 50px;
+  padding: 0px 80px;
+  width: 100%;
 }
 
 footer h3 {
   font-size: 2.5em;
-  margin: 75px 0px 0px;
+  margin: 65px 0px 0px;
+  width: 100%;
 }
 
-footer #apropos, #liste_a_propos, #noshebergements, #assistance {
+footer #apropos, footer #noshebergements, footer #assistance {
   font-size: 1.1em;
-  width: fit-content;
+  width: 100%;
+  margin-top: 10px;
 }
 
 footer nav {
