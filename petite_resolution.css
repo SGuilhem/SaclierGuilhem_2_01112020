@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 375px) and (max-device-width: 1366px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 1366px) {
   body {
         display: flex;
         flex-direction: column;
@@ -210,6 +210,7 @@ h4 {
 
 #hebergements {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
   padding: 0;
   }
@@ -435,7 +436,7 @@ footer h3 {
   width: 100%;
 }
 
-footer #apropos, footer #noshebergements, footer #assistance {
+footer .footerCategory {
   font-size: 1.1em;
   width: 100%;
   margin-top: 10px;
