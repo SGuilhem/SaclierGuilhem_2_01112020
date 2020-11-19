@@ -307,6 +307,7 @@ font-size: 0.8em;
   font-weight: 800;
   color: black;
   padding-top: 10px;
+  padding-left: 0px;
 }
 
 #hebergementsmarseille .descriptlocleft {
@@ -333,7 +334,7 @@ font-size: 0.8em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 50px;
+  padding: 25px;
   background-color: white;
   color: black;
   width: 100%;
@@ -344,8 +345,7 @@ font-size: 0.8em;
 #activites h1 {
   display: flex;
   justify-content: space-between;
-
-  padding: 45px 0px 55px;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -362,9 +362,8 @@ font-size: 0.8em;
   flex-direction: column;
   background-color: white;
   width: 100%;
-  height: 470px;
-  margin-bottom: 30px;
-  border-radius: 50px;
+  height: 220px;
+  border-radius: 25px;
 }
 
 #activites .vignettePetites, #activites .vignetteMoyennes, #activites .vignetteGrandes {
@@ -380,22 +379,22 @@ font-size: 0.8em;
   flex-direction: column;
   background-color: white;
   width: 100%;
-  height: 470px;
+  height: 190px;
   margin-bottom: 30px;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 #activites #listeactivites img {
-  max-height: 330px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  max-height: 135px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   object-position: 50% 50%;
   object-fit: cover;
   }
 
 #activites #listeactivites .descriptactivites {
 
-  padding: 55px 0px 15px 50px;
+  padding: 20px 0px 15px 20px;
 }
 
 /* Footer */
@@ -403,21 +402,21 @@ font-size: 0.8em;
 footer {
   display: flex;
   background-color: #F2F2F2;
-  padding: 50px 0 50px;
-  margin-top: 30px;
+  padding: 0px 0 25px;
+  margin-top: 10px;
   width: 100%;
 }
 
 footer #container_footer {
   display: flex;
   flex-direction: column;
-  padding: 0px 80px;
+  padding: 20px 40px;
   width: 100%;
 }
 
 footer h3 {
 
-  margin: 65px 0px 0px;
+  margin: 15px 0px 0px;
   width: 100%;
 }
 
@@ -428,12 +427,16 @@ footer .footerCategory {
 }
 
 footer nav {
-  margin: 30px 0px 25px 0px;
+  margin: 15px 0px 10px 0px;
+}
+
+footer .footerCategory .listCategory nav a {
+  font-size: 1em;
+  padding: 0;
 }
 
 footer a {
-
-  margin: 10px 0 10px;
+  margin: 5px 0px 5px;
 }
 
 }
