@@ -1,10 +1,4 @@
-@media screen and (min-device-width: 320px) and (max-device-width: 1366px) {
-  body {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Raleway', sans-serif;
-        width: fit-content;
-  }
+@media screen and (max-width: 720px) {
 
 /* @media screen and (min-device-width: 375px) and (max-device-width: 1366px) */
 
@@ -13,6 +7,8 @@
 #bloc_page {
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -22,28 +18,25 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 0px;
-    padding-top: 50px;
     height: auto;
   }
 
   header #logo img{
     width: auto;
-    height: 120px;
+    height: 40px;
   }
 
   header #logo {
-    padding-left: 50px;
+    padding-left: 25px;
   }
 
   header .inscription {
     display: flex;
-    padding-right: 50px;
   }
 
   header nav {
     display: flex;
     width: 100%;
-    padding-top: 25px;
     order: 3;
   }
 
@@ -52,10 +45,9 @@
     text-align: center;
     width: 100%;
     align-items: center;
-    font-size: 2.5em;
+
     border-bottom: 6px solid #F2F2F2;
     border-top: none;
-    padding-bottom: 35px;
   }
 
   header nav a.active,
@@ -67,82 +59,67 @@
 
   header a.inscription {
     order: 2;
-    font-size: 2.5em;
+
   }
 
 /* Titres Sub Header */
 
 #titresubheader {
-  margin-top: 70px;
-  margin-bottom: 55px;
-  padding-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   align-items: flex-start;
   width: 100%;
   height: auto;
-  font-size: 2.6em;
+  padding: 0px 25px;
 }
 
 #titresubheader h1 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #titresubheader h2 {
-  margin-bottom: 65px;
-  font-size: 0.7em;
+  margin-bottom: 25px;
+
 }
 
-form {
-  width: 100%;
+/** Bouton geolocate **/
+
+form#recherche  {
+  width: 100%
 }
 
-form #box .conteneur input{
-  width: 600px;
-  height: 120px;
-  padding-left: 50px;
-  font-size: 50px;
-}
-form #box .squaremapicon {
-  height: 120px;
-  width: 120px;
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
+form#recherche input {
+  flex-grow: 1;
 }
 
-form button {
-  background-color: #0065FC;
-  width: 120px;
-  height: 120px;
-  border: none;
-  border-radius: 35px;
-  font-size: 45px;
+form#recherche input::placeholder {
 }
 
-form button #rechercher {
+form#recherche button.search {
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+form#recherche button.search i {
+ display: block;
+}
+
+form#recherche button.search span {
   display: none;
-}
-
-form button .loupe {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-form .fas {
 }
 /* Filtres */
 
 #filtres {
   display: flex;
   flex-direction: column;
-  padding: 25px 50px;
+  padding: 0px 20px;
 }
 
 h3 {
   display: flex;
   align-self: flex-start;
-  font-size: 3em;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
 }
 
@@ -153,17 +130,15 @@ h3 {
 }
 
 #filtres nav a {
-  font-size: 2.5em;
-  margin: 5px 10px 15px;
-  border: #e6e6e6 6px solid;
+
+  margin: 0px 9px 12px 0px;
+  border: #e6e6e6 2px solid;
   border-radius: 90px;
 }
 
 #filtres a i {
   color: #0065FC;
   background-color: #DEEBFF;
-  width: 120px;
-  height: 120px;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;
   border-top-left-radius: 100%;
@@ -172,31 +147,24 @@ h3 {
 }
 
 #filtres nav a span {
-    margin-left: 25px;
-    margin-right: 25px;
+  margin: 0;
+  padding: 0.5em;
 }
 
 /* Infos */
 
-h4 {
-  padding-left: 15px;
-}
-
 #infos {
+  font-size: 1.2em;
   display: flex;
   flex-direction: row;
   align-items: baseline;
   width: 100%;
-  font-size: 3.5em;
-  padding: 30px 50px 100px 50px;
+  padding: 0px 25px 30px;
+  padding-top: 10px;
 }
 
 #infos i{
-  font-size: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 5px 8px;
   color: #0065FC;
   border: #e6e6e6 2px solid;
   border-top-right-radius: 100%;
@@ -205,6 +173,9 @@ h4 {
   border-bottom-left-radius: 100%;
 }
 
+#infos h4 {
+  padding-left: 0px;
+}
 
 /* Hébergements */
 
@@ -223,12 +194,12 @@ h4 {
 #titrepopulaires {
   display: flex;
   justify-content: space-between;
-  font-size: 2.7em;
+
   padding: 85px 25px 65px;
 }
 
 #titrepopulaires i {
-    font-size: 60px;
+
 }
 
 #populaires .populaires {
@@ -257,16 +228,16 @@ h4 {
 }
 
 #populaires .descriptlocright {
-  font-size: 3em;
+
   padding: 50px;
 }
 
 #populaires a .prix {
-  font-size: 0.8em;
+
 }
 
 #populaires .rating {
-  font-size: 0.7em;
+
 }
 
 #hebergementsmarseille {
@@ -276,7 +247,7 @@ h4 {
   padding: 50px;
   background-color: white;
   color: black;
-  font-size: 0.9em;
+
   width: 100%;
   height: 100%;
 }
@@ -284,7 +255,6 @@ h4 {
 #hebergementsmarseille h1 {
   display: flex;
   justify-content: space-between;
-  font-size: 4em;
   padding: 45px 0px 55px;
   width: 100%;
 }
@@ -319,7 +289,6 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-size: 3em;
   font-weight: 800;
   color: black;
   padding-top: 50px;
@@ -329,18 +298,18 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 2.5em;
+
   padding: 0px 0px 0px 30px;
 }
 
 #hebergementsmarseille .descriptlocleft span {
-  font-size: 1.1em;
+
   margin: 0px;
   padding: 10px 0px 10px;
 }
 
 #hebergementsmarseille .descriptlocleft .rating {
-    font-size: 0.8em;
+
     padding-top: 10px;
 }
 
@@ -353,16 +322,15 @@ h4 {
   padding: 50px;
   background-color: white;
   color: black;
-  font-size: 0.9em;
   width: 100%;
-  height: fit-content;
+  height: auto;
   margin-top: 0px;
 }
 
 #activites h1 {
   display: flex;
   justify-content: space-between;
-  font-size: 3.7em;
+
   padding: 45px 0px 55px;
   width: 100%;
 }
@@ -375,28 +343,31 @@ h4 {
   height: 100%;
 }
 
-#activites #listeactivites #groupegauche {
+#activites #listeactivites .vignetteContainer {
   display: flex;
-  flex-flow: column;
-  height: 100%;
+  flex-direction: column;
+  background-color: white;
   width: 100%;
+  height: 470px;
+  margin-bottom: 30px;
+  border-radius: 50px;
 }
 
-#activites #listeactivites #groupedroite {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-  width: 100%;
-}
-
-#activites .vignetteverticale, #activites .vignettemoyenne, #activites .vignettehorizontale {
-  display: flex;
+#activites .vignettePetites, #activites .vignetteMoyennes, #activites .vignetteGrandes {
+/*  display: flex;
   flex-direction: column;
   background-color: white;
   width: 100%;
   max-width: 100%;
   height: 480px;
   margin-bottom: 50px;
+  border-radius: 50px;*/
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 470px;
+  margin-bottom: 30px;
   border-radius: 50px;
 }
 
@@ -409,7 +380,7 @@ h4 {
   }
 
 #activites #listeactivites .descriptactivites {
-  font-size: 2.7em;
+
   padding: 55px 0px 15px 50px;
 }
 
@@ -431,13 +402,13 @@ footer #container_footer {
 }
 
 footer h3 {
-  font-size: 2.5em;
+
   margin: 65px 0px 0px;
   width: 100%;
 }
 
 footer .footerCategory {
-  font-size: 1.1em;
+
   width: 100%;
   margin-top: 10px;
 }
@@ -447,9 +418,13 @@ footer nav {
 }
 
 footer a {
-  font-size: 2.2em;
+
   margin: 10px 0 10px;
 }
+
+}
+
+@media screen and (max-width: 1024px) {
 
 }
 

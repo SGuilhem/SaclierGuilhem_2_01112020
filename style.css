@@ -42,8 +42,6 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -122,63 +120,53 @@ header .inscription {
   display: flex;
 }
 
-.squaremapicon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F2F2F2;
-  height: 40px;
-  width: 45px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+form#recherche {
+  display: inline-flex;
+  --gray: #F2F2F2;
+  --blue: #0065fc;
+  --padding: 1em;
+  --radius: 15px;
 }
 
-.iconmap {
+/** Bouton geolocate **/
+
+form#recherche .geolocate {
+  background-color: var(--gray);
+  border: 1px solid var(--gray);
+  padding: var(--padding);
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
-form {
-  display: flex;
-}
-
-.conteneur {
-  display: flex;
-}
-
-.conteneur input#localisation {
-  font-weight: bold;
+form#recherche input {
+  border: 1px solid var(--gray);
+  padding: var(--padding);
   color: black;
-  font-size: 0.9em;
-  font-weight: 600;
-  width: 210px;
-  height: 40px;
-  background: #white;
-  border: 1px rgba(232, 232, 232, 0.5) solid;
-  padding-left: 10px;
+  font-weight: bold;
 }
 
-::placeholder {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+form#recherche input::placeholder {
   color: black;
-  font-weight: 600;
-  margin-left: 5px
+  font-weight: bold;
 }
 
-form button {
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  background-color: #0065FC;
-  width: 120px;
-  height: 40px;
+form#recherche button.search {
   border: none;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  padding: var(--padding);
+  background-color: var(--blue);
+  color: white;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
-form button .loupe {
-  display:none;
+form#recherche button.search i {
+ display: none;
 }
+
+form#recherche button.search span {
+
+}
+
 
 /* h1 h2 sous le header */
 
@@ -630,7 +618,8 @@ footer {
 footer #container_footer {
   display: flex;
   margin: 0 auto;
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   padding: 0px 50px;
   flex-wrap: wrap;
 }
