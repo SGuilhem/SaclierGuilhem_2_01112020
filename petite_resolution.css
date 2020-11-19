@@ -86,7 +86,7 @@
 /** Bouton geolocate **/
 
 form#recherche  {
-  width: 100%
+  width: max-content;
 }
 
 form#recherche input {
@@ -435,6 +435,24 @@ footer a {
 
 @media screen and (max-width: 1024px) {
 
+#hebergements {
+  display: flex;
+  flex-direction: column;
 }
 
+#hebergementsmarseille {
+  width: 100%;
+}
+
+#populaires {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#populaires #listepopulaires {
+  flex-direction: row;
+}
+
+}
 /* End */
