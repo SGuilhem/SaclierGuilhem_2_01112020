@@ -126,6 +126,8 @@ form#recherche {
   --blue: #0065fc;
   --padding: 1em;
   --radius: 15px;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius);
 }
 
 /** Bouton geolocate **/
@@ -139,7 +141,7 @@ form#recherche .geolocate {
 }
 
 form#recherche input {
-  border: 1px solid var(--gray);
+  border: none;
   padding: var(--padding);
   color: black;
   font-weight: bold;
