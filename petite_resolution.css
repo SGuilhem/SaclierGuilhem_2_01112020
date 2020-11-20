@@ -434,7 +434,7 @@ footer a {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
 /* hebergements */
 
@@ -471,7 +471,58 @@ footer a {
 
 /* Activites */
 
+#activites {
+  padding-left: 55px;
+  padding-right: 0px;
+  height: 350px;
+}
 
+#activites #listeactivites .vignetteContainer {
+  height: 80%;
+  width: 50%;
+}
+
+#activites #listeactivites .vignetteContainer .vignetteGrandes{
+  height: 100%;
+  width: 75%;
+}
+
+#activites #listeactivites .vignetteContainer .vignetteGrandes img {
+  width: 100%;
+  height: 80%;
+}
+
+#activites #listeactivites .vignetteContainer .vignetteMoyennes{
+  height: 50%;
+  width: 75%;
+}
+
+#activites #listeactivites .vignetteContainer .vignetteMoyennes img {
+  height: 70%;
+  width: 100%;
+}
+
+#activites #listeactivites .vignetteContainer .vignettePetites{
+  width: 75%;
+  height: 40%;
+}
+
+#activites #listeactivites .vignetteContainer .vignettePetites img {
+  height: 60%;
+  width: 100%;
+}
+
+#listeactivites .descriptactivites {
+  padding: 5px 0px 5px 10px;
+}
+
+/* Footer */
+
+footer #container_footer {
+  padding: 0px 0px 0px 120px;
+}
+
+}
 
 /*
 #activites .vignettePetites, #activites .vignetteMoyennes, #activites .vignetteGrandes {
