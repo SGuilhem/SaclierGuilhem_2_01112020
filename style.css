@@ -348,7 +348,9 @@ form#recherche button.search span {
   font-weight: 400;
 }
 
-#hebergementsmarseille h1, p {
+#hebergementsmarseille h2, p {
+  font-weight: bold;
+  font-size: 1.4em;
   padding-left: 10px;
 }
 
@@ -392,7 +394,9 @@ form#recherche button.search span {
   width: 28%;
 }
 
-#populaires h1 {
+#populaires h2 {
+  font-weight: bold;
+  font-size: 1.4em;
   padding-left: 25px;
 }
 
@@ -501,6 +505,12 @@ section {
   font-size: 0.9em;
   width: 100%;
   height: 500px;
+}
+
+#activites h2, p {
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-left: 10px;
 }
 
 #activites #listeactivites {
