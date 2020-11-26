@@ -95,8 +95,7 @@ form#recherche input::placeholder {
 }
 
 form#recherche button.search {
-  border-top-left-radius: var(--radius);
-  border-bottom-left-radius: var(--radius);
+  border-radius: 15px;
 }
 
 form#recherche button.search i {
