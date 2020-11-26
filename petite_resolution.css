@@ -87,13 +87,6 @@ form#recherche  {
   width: max-content;
 }
 
-form#recherche input {
-  flex-grow: 1;
-}
-
-form#recherche input::placeholder {
-}
-
 form#recherche button.search {
   border-radius: 15px;
 }
